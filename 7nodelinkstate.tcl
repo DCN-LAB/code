@@ -46,8 +46,7 @@ $cbr1 attach-agent $udp1
 set null0 [new Agent/Null]
 $ns attach-agent $n4 $null0
 $ns connect $udp1 $null0
-#The Link state routing algorithm is also known as Dijkstra's algorithm which is used to find the
-shortest path from one node to every other node in the network.
+#The Link state routing algorithm is also known as Dijkstra's algorithm which is used to find the shortest path from one node to every other node in the network.
 $ns rtproto LS
 $ns rtmodel-at 20.0 down $n1 $n4
 $ns rtmodel-at 23.0 up $n1 $n4
