@@ -27,7 +27,8 @@ $ns duplex-link-op $n0 $n2 orient right-down
 $ns duplex-link-op $n1 $n2 orient right-up
 $ns duplex-link-op $n2 $n3 orient right
 $n0 label "TCP Source"
-$n1 label "UDP So$n3 label "Destination"
+$n1 label "UDP"
+$n3 label "Destination"
 $n0 color blue
 $n1 color orange
 $n3 color red
@@ -59,4 +60,4 @@ $ns at 1.5 "$ftp0 start"
 $ns at 1.0 "$cbr0 stop"
 $ns at 2.5 "$ftp0 stop"
 $ns at 5.0 "Finish"
-$ns runurce"
+$ns run
