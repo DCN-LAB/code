@@ -27,8 +27,7 @@ $ns duplex-link $n1 $n2 1Mb 10ms DropTail
 Agent/Ping instproc recv {from rtt} {
 #instvar adds instance variable, and brings them to the local scope
 $self instvar node_
-#RTT is the length of time it takes for a signal to be sent plus the length of time it takes for an
-acknowledgement of that signal to be received.
+#RTT is the length of time it takes for a signal to be sent plus the length of time it takes for an acknowledgement of that signal to be received.
 puts "Node $from received ping answer from Node [$node_ id] with Round Trip Time of $rtt
 ms"
 }
