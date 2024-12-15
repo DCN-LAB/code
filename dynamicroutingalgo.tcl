@@ -1,10 +1,7 @@
 #Create a simulator object
 set ns [new Simulator]
 #Tell the simulator to use dynamic routing
-#Distance vector routing is an asynchronous algorithm in which node x sends the copy of its
-distance vector to all its neighbors. When node x receives the new distance vector from one of
-its #neighboring vector, v, it saves the distance vector of v and uses the Bellman-Ford equation
-to update its own distance vector.
+#Distance vector routing is an asynchronous algorithm in which node x sends the copy of itsdistance vector to all its neighbors. When node x receives the new distance vector from one ofits #neighboring vector, v, it saves the distance vector of v and uses the Bellman-Ford equation to update its own distance vector.
 $ns rtproto DV
 #Open the nam trace file
 set nf [open p7.nam w]
